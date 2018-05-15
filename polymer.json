@@ -1,0 +1,24 @@
+{
+  "entrypoint": "index.html",
+  "shell": "src/teezee-app-pacman.js",
+  "fragments": [
+    "src/teezee-app-pacman-controls.js",
+    "src/teezee-app-pacman-registration.js"
+  ],
+  "sources": [
+   "src/teezee-app-pacman.js",
+   "manifest/**",
+   "package.json"
+  ],
+  "extraDependencies": [
+    "manifest.json",
+    "node_modules/@webcomponents/webcomponentsjs/**"
+  ],
+  "builds": [
+    { 
+      "preset": "es6-unbundled"
+    }
+  ],
+  "moduleResolution": "node",
+  "npm": true
+}

@@ -1,0 +1,18 @@
+{
+  "name": "teezee-app-pacman",
+  "version": "3.0.0-pre.12",
+  "main": "src/teezee-app-pacman.js",
+  "author": "The Polymer Project Authors",
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "@polymer/iron-ajax": "^3.0.0-pre.18",
+    "@polymer/iron-icon": "^3.0.0-pre.18",
+    "@polymer/iron-image": "^3.0.0-pre.19",
+    "@polymer/paper-button": "^3.0.0-pre.18",
+    "@polymer/paper-checkbox": "^3.0.0-pre.18",
+    "@polymer/paper-dropdown-menu": "^3.0.0-pre.18",
+    "@polymer/paper-input": "^3.0.0-pre.18",
+    "@polymer/polymer": "^3.0.0-pre.18",
+    "@webcomponents/webcomponentsjs": "^1.2.0"
+  }
+}

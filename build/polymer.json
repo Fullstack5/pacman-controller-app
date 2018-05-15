@@ -1,0 +1,49 @@
+{
+  "entrypoint": "index.html",
+  "shell": "src/teezee-app-pacman.js",
+  "fragments": [
+    "src/teezee-app-pacman-controls.js",
+    "src/teezee-app-pacman-registration.js"
+  ],
+  "sources": [
+    "src/teezee-app-pacman.js",
+    "manifest/**",
+    "package.json",
+    "index.html",
+    "src/teezee-app-pacman.js",
+    "src/teezee-app-pacman-controls.js",
+    "src/teezee-app-pacman-registration.js"
+  ],
+  "extraDependencies": [
+    "bower_components/webcomponentsjs/*.js",
+    "manifest.json",
+    "node_modules/@webcomponents/webcomponentsjs/**"
+  ],
+  "builds": [
+    {
+      "name": "es6-unbundled",
+      "browserCapabilities": [
+        "es2015",
+        "push"
+      ],
+      "js": {
+        "minify": true,
+        "compile": "es2015",
+        "transformModulesToAmd": true
+      },
+      "css": {
+        "minify": true
+      },
+      "html": {
+        "minify": true
+      },
+      "bundle": false,
+      "addServiceWorker": true,
+      "addPushManifest": true,
+      "preset": "es6-unbundled"
+    }
+  ],
+  "npm": true,
+  "componentDir": "node_modules/",
+  "moduleResolution": "node"
+}
